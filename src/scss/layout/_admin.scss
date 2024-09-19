@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+#citas-admin{
+    margin: 3rem;
+    h3{
+        margin-top: 3rem;
+    }
+}
+    .citas, 
+    .servicios{
+        list-style: none;
+        padding: 3rem;
+        
+        li{
+            margin-top: 60px;   
+            
+            span{
+                color: v.$azul-mar;
+                font-weight: v.$bold;
+                font-size: 2.4rem;
+            } 
+            h3{
+                margin: 0 65px;
+                color: v.$gris2;
+                font-size: 35px;
+                padding-bottom: 5px;
+                
+            }
+
+        }
+        .servicio{
+            color: v.$verde-claro;
+        }
+        
+    }
+
+
+

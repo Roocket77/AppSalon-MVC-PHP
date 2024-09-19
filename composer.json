@@ -1,0 +1,24 @@
+{
+    "name": "lautaro/app-salon",
+    "description": "Proyecto php8, mvc,etc",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controllers\\": "./controllers",
+            "Model\\": "./models",
+            "Clases\\": "./clases"
+        }
+    },
+    "authors": [
+        {
+            "name": "Roocket77",
+            "email": "lautydehesa15@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

@@ -1,0 +1,41 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.barra{
+    p{
+        color: #020a74;
+        margin-left: 30px;
+        padding: 10px;
+        background: linear-gradient(to bottom right, v.$azul-mar, v.$blanco) ;
+        max-width: 50%;
+        border-radius: 25px;
+        text-align: center;
+    }
+    .boton-session{
+        background-color: #000;
+        text-decoration: none;
+        color: v.$blanco;
+        padding: 10px;
+        border-radius: 20px;
+        position: absolute;
+        box-shadow: 2px 3px 8px 0px rgb(159, 156, 156, 0.2);
+        top: 10px;
+        right: 10px;
+        transition: all .7s;
+        &:hover{
+            background-color: v.$gris;
+            transform: scale(1.05);
+            color: #000;
+        }
+    }
+
+}
+.barra-servicios{
+    margin-bottom: v.$separacion;
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}

@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.paginacion{
+    padding: v.$separacion 0;
+    @include m.telefono{
+        display: flex;
+        justify-content: space-between;
+        .boton{
+            margin: 10px 30px;
+            padding: 10px 25px;
+
+        }
+    }
+    @include m.tablet{
+        .boton{
+            padding: 10px 50px;
+        }
+    }
+}
+
+.ocultar-p{
+    visibility: hidden;
+}
